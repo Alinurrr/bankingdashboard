@@ -1,13 +1,16 @@
 import { useEffect } from "react";
+import Sidebar from "./component/Sidebar";
 
 function App() {
   useEffect(() => {
     document.title = "Dashboard GND Bank";
   }, []);
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="flex h-screen w-full bg-white">
+
+      <Sidebar />
+
+    </div>
   );
 }
 
