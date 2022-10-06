@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Navbar from "./component/Navbar";
 import Sidebar from "./component/Sidebar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="flex h-screen w-full bg-white">
 
       <Sidebar />
+      <Navbar />
 
     </div>
   );
