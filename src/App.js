@@ -1,16 +1,19 @@
 import { useEffect } from "react";
 import Navbar from "./component/Navbar";
 import Sidebar from "./component/Sidebar";
+import IndexContent from "./component/Content/IndexContent";
 
 function App() {
   useEffect(() => {
     document.title = "Dashboard GND Bank";
   }, []);
   return (
-    <div className="flex h-screen w-full bg-white">
-
+    <div className="flex bg-white">
       <Sidebar />
-      <Navbar />
+      <div className="flex flex-col w-full">
+        <Navbar />
+        <IndexContent />
+      </div>
 
     </div>
   );
