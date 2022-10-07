@@ -3,7 +3,7 @@ import Profile from '../assets/img/profile.png'
 
 function Navbar(props) {
   return (
-    <div className="mx-auto flex h-28 w-full items-center justify-between px-4 border-b">
+    <div className="mx-auto flex w-full items-center justify-between px-4 py-9 border-b">
       <div className="flex items-center gap-4">
         <img src={Profile} alt="ProfilPhoto" />
         <h3 className='text-2xl font-normal'>Welcome To GND Bank</h3>

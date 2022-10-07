@@ -8,9 +8,9 @@ function App() {
     document.title = "Dashboard GND Bank";
   }, []);
   return (
-    <div className="flex bg-white">
+    <div className="flex h-screen w-full bg-white">
       <Sidebar />
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full overflow-y-auto">
         <Navbar />
         <IndexContent />
       </div>
