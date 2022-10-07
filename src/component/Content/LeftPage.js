@@ -38,12 +38,12 @@ function LeftPage(props) {
               <p className="text-base font-medium text-black">Latest Transactions</p>
             </div>
             <div>
-              <button className='>
+              <button className='ml-7'>
                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.2736 10.8332L7.26875 7.78874C7.91035 7.08664 8.31115 6.16092 8.32446 5.14387C8.35303 2.96 6.5994 1.18324 4.41533 1.18324C2.23125 1.18324 0.431087 2.96 0.402498 5.14389C0.373909 7.32777 2.12756 9.10453 4.31163 9.10453C5.32878 9.10453 6.25964 8.71588 6.9701 8.08352L9.97497 11.128C10.0151 11.1687 10.0682 11.1891 10.1216 11.1891C10.1749 11.1891 10.2285 11.1687 10.2698 11.128C10.3523 11.0466 10.354 10.9146 10.2736 10.8332ZM4.31709 8.6876C2.36307 8.6876 0.793876 7.09793 0.819456 5.14389C0.845036 3.18984 2.45585 1.60015 4.40987 1.60015C6.36389 1.60015 7.93308 3.18982 7.9075 5.14389C7.88192 7.09795 6.27111 8.6876 4.31709 8.6876Z" fill="#304858" stroke="#304858" stroke-width="0.500288" />
                 </svg>
               </button>
-              <button className='>
+              <button className='ml-7'>
                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="-0.500288" x2="12.008" y2="-0.500288" transform="matrix(1 0 -0.0130896 0.999914 0.451172 1.1842)" stroke="#304858" stroke-width="1.00058" />
                   <line y1="-0.500288" x2="12.008" y2="-0.500288" transform="matrix(1 0 -0.0130896 0.999914 0.411865 4.18573)" stroke="#304858" stroke-width="1.00058" />
@@ -106,6 +106,63 @@ function LeftPage(props) {
                 <p className="text-base font-medium text-[#304858]">Receive Refund</p>
               </div>
               <p className="text-base font-medium text-[#304858]">$1,550.00</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Payment Details */}
+        <div className='py-10 pb-14'>
+
+          <div className="flex w-full justify-between items-center px-14">
+            <div>
+              <p className="text-lg font-medium text-[#304858]">Payment Details</p>
+            </div>
+            <div>
+              <button >
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="-0.500288" x2="12.008" y2="-0.500288" transform="matrix(1 0 -0.0130896 0.999914 0.451172 1.1842)" stroke="#304858" stroke-width="1.00058" />
+                  <line y1="-0.500288" x2="12.008" y2="-0.500288" transform="matrix(1 0 -0.0130896 0.999914 0.411865 4.18573)" stroke="#304858" stroke-width="1.00058" />
+                  <line y1="-0.500288" x2="12.008" y2="-0.500288" transform="matrix(1 0 -0.0130896 0.999914 0.372681 7.18713)" stroke="#304858" stroke-width="1.00058" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-full justify-between px-14 mt-9">
+            <div className='flex flex-row w-full justify-between items-center mb-4'>
+              <div className='flex flex-col'>
+                <p className="text-base text-[#A2ABA3] mb-2">From</p>
+                <p className="text-base font-medium text-[#304858]">Olith Bank Refund</p>
+              </div>
+              <p className="text-2xl font-medium text-[#304858]">+1,550.00</p>
+            </div>
+            <div className="flex flex-row">
+              <div className='flex flex-col w-1/3'>
+                <p className="text-base text-[#A2ABA3] mb-2">Type</p>
+                <p className="text-base text-[#A2ABA3] mb-2">Cash Refund</p>
+              </div>
+              <div className='flex flex-col w-1/3'>
+                <p className="text-base text-[#A2ABA3] mb-2">Category</p>
+                <p className="text-base text-[#A2ABA3] mb-2">Annual Cashback</p>
+              </div>
+              <div className='flex flex-col w-1/3'>
+                <p className="text-base text-[#A2ABA3] mb-2">1:48 PM</p>
+                <p className="text-base text-[#A2ABA3] mb-2">Mon, Mar 1</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex w-full justify-between items-center px-14 mt-14">
+            <button className='text-base text-[#A2ABA3] py-5 px-6 rounded-xl'>
+              Manage
+            </button>
+            <div>
+              <button className='text-base text-[#A2ABA3] py-5 px-6 border rounded-xl ml-3'>
+                Invoice
+              </button>
+              <button className='text-base text-[#A2ABA3] py-5 px-6 border rounded-xl ml-3'>
+                Add as a Recipient
+              </button>
             </div>
           </div>
         </div>
