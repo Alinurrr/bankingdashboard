@@ -28,3 +28,15 @@
   content: '';
   filter: drop-shadow(25.0144px 0px 96.0553px rgba(85, 49, 251, 0.12)) drop-shadow(5.00288px 0px 15.609px rgba(85, 49, 251, 0.24));
 }
+
+.master-card {
+  background-image: url('../src/assets/img/mastercard.png');
+  background-size: cover;
+  width: 339.2px;
+  height: 204.12px;
+}
+
+balance-card {
+  width: 138.14px;
+  height: 204.12px;
+}
