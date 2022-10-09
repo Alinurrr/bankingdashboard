@@ -6,10 +6,10 @@ import Logout from '../assets/icon/power.png'
 
 function Sidebar(props) {
   return (
-    <div>
-      <div className="flex h-screen w-24 flex-col justify-between border-r bg-white">
-        <div>
-          <div className="inline-flex  w-24 pt-12 pb-24 items-center justify-center">
+    <>
+      <div className="w-24 flex-col justify-between border-r bg-white h-screen sticky top-0 ">
+        <div >
+          <div className="inline-flex w-24 pt-6 pb-24 items-center justify-center">
             {/* <span className="block h-14 w-14 rounded-lg bg-gray-200" /> */}
             <img src={LogoBank} alt="Hounter Logo" />
           </div>
@@ -154,7 +154,8 @@ function Sidebar(props) {
             </nav>
           </div>
         </div>
-        <div className="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
+
+        <div className="border-t mt-10 border-gray-100 bg-white p-2">
           <form action="/logout">
             <button type="submit" className="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700">
               <img src={Logout} alt="Hounter Logo" />
@@ -165,7 +166,7 @@ function Sidebar(props) {
           </form>
         </div>
       </div>
-    </div >
+    </ >
   );
 }
 

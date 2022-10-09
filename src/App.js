@@ -8,7 +8,7 @@ function App() {
     document.title = "Dashboard GND Bank";
   }, []);
   return (
-    <div className="flex h-screen w-full bg-white">
+    <div className="flex w-full bg-white">
       <Sidebar />
       <div className="flex flex-col w-full overflow-y-auto">
         <Navbar />
