@@ -146,6 +146,65 @@ function RightPage(props) {
         </div>
       </div>
 
+      <div className="flex flex-col mt-14 w-[500px]">
+        <p className='text-2xl font-bold text-[#1B2767]'>Account Summary</p>
+
+        <div className='mt-5 flex flex-row text-[#110F48]'>
+          <div className="flex flex-col shrink-0 bg-white/70 py-7 px-5 rounded-3xl w-36 h-60">
+            <div className='bg-[#F6B7CE] rounded-xl w-12 h-12 flex shrink-0 items-center justify-center'>
+              <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.65744 13.3868C4.02927 10.552 9.17971 4.38221 10.8069 2.3812L9.70149 10.3853L18.2196 9.38475L8.56337 20.8906L9.65564 13.887L1.65744 13.3868Z" stroke="white" stroke-width="1.00058" />
+              </svg>
+            </div>
+            <p className='text-base mt-9'>This Week</p>
+            <div className='flex flex-row items-center mt-4'>
+              <h3 className='text-xl mr-2 font-medium'>$3.45k</h3>
+              <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.27035 9.44029L4.37514 1.43564M4.37514 1.43564L0.826959 4.93767M4.37514 1.43564L8.33196 4.93767" stroke="#27AE60" stroke-width="1.00058" />
+              </svg>
+
+            </div>
+            <span className='text-base mt-4'>+ 6.4%</span>
+          </div>
+
+          <div className="flex flex-col shrink-0 bg-white/70 py-7 px-5 mx-9 rounded-3xl w-36 h-60">
+            <div className='bg-[#303778] rounded-xl w-12 h-12 flex shrink-0 items-center justify-center'>
+              <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.65744 13.3868C4.02927 10.552 9.17971 4.38221 10.8069 2.3812L9.70149 10.3853L18.2196 9.38475L8.56337 20.8906L9.65564 13.887L1.65744 13.3868Z" stroke="white" stroke-width="1.00058" />
+              </svg>
+            </div>
+            <p className='text-base mt-9'>This Month</p>
+            <div className='flex flex-row items-center mt-4'>
+              <h3 className='text-xl mr-2 font-medium'>$12.9k</h3>
+              <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.7829 7.38621C15.9772 7.78642 13.4061 10.5545 12.2213 11.8885L1.35229 1.38316M1.35229 1.38316L1.25406 8.88697M1.35229 1.38316L8.85675 1.38316" stroke="white" stroke-width="1.00058" />
+              </svg>
+
+            </div>
+            <span className='text-base mt-4'>- 3.1%</span>
+          </div>
+
+          <div className="flex flex-col shrink-0 bg-white/70 py-7 px-5 rounded-3xl w-36 h-60">
+            <div className='bg-[#fdbc64] rounded-xl w-12 h-12 flex shrink-0 items-center justify-center'>
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5275 0.380707C5.45863 0.380707 0.456364 5.31792 0.376925 11.3863C0.297486 17.4547 5.17049 22.3919 11.2394 22.3919C17.3083 22.3919 22.3105 17.4547 22.39 11.3863C22.4694 5.31792 17.5964 0.380707 11.5275 0.380707ZM11.2574 21.0162C5.94693 21.0162 1.68324 16.6963 1.75275 11.3863C1.82226 6.07628 6.19905 1.75641 11.5095 1.75641C16.82 1.75641 21.0837 6.07628 21.0142 11.3863C20.9447 16.6963 16.5679 21.0162 11.2574 21.0162Z" fill="white" />
+                <path d="M12.1611 4.50775H10.7852L10.6914 11.6716L14.964 16.0005L15.9496 15.0278L12.0748 11.1019L12.1611 4.50775Z" fill="white" />
+              </svg>
+            </div>
+            <p className='text-base mt-9'>Upcoming</p>
+            <div className='flex flex-row items-center mt-4'>
+              <h3 className='text-xl mr-2 font-medium'>$14.4k</h3>
+              <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.27035 9.44029L4.37514 1.43564M4.37514 1.43564L0.826959 4.93767M4.37514 1.43564L8.33196 4.93767" stroke="#27AE60" stroke-width="1.00058" />
+              </svg>
+
+            </div>
+            <span className='text-base mt-4'>+ 10.3%</span>
+          </div>
+        </div>
+
+      </div>
+
     </>
   );
 }
