@@ -88,7 +88,7 @@ export const data = {
   datasets: [
     {
       label: 'Mountly Balance',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 40 })),
+      data: labels.map(() => faker.datatype.number({ min: 10, max: 40 })),
       // borderColor: 'rgb(53, 162, 235)',
       // backgroundColor: "#7947F7",
       borderColor: "#7947F7",
@@ -131,8 +131,19 @@ function RightPage(props) {
 
       </div>
 
-      <div className='h-40'>
-        <Line options={options} data={data} />
+      <div className="flex flex-col mt-14 w-[500px]">
+        <div className="flex flex-row items-center justify-between">
+          <p className='text-2xl font-bold text-[#1B2767]'>Monthly Balance</p>
+          <div className='flex flex-row items-center'>
+            <p className='text-base font-normal text-black mr-3'>2020</p>
+            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.82826 0.72168L0.70752 0.72168L4.72205 4.22372L8.82826 0.72168Z" fill="#C4C4C4" />
+            </svg>
+          </div>
+        </div>
+        <div className='h-40 mt-9'>
+          <Line options={options} data={data} />
+        </div>
       </div>
 
     </>
