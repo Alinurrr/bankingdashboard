@@ -1,6 +1,105 @@
 import React from 'react';
 import Graph from '../../assets/img/graph.png'
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+import { faker } from '@faker-js/faker';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      display: false,
+    },
+    title: {
+      display: false,
+    }
+  },
+  scales: {
+    x:
+    {
+      grid: {
+        display: false,
+      },
+    },
+    y:
+    {
+      ticks: {
+        callback: function (value) {
+          var ranges = [
+            { divider: 1e6, suffix: "M" },
+            { divider: 1e3, suffix: "k" },
+          ];
+          function formatNumber(n) {
+            for (var i = 0; i < ranges.length; i++) {
+              if (n >= ranges[i].divider) {
+                return (
+                  (n / ranges[i].divider).toString() +
+                  ranges[i].suffix
+                );
+              }
+            }
+            return n;
+          }
+          return formatNumber(value) + "k";
+        },
+        stepSize: 10,
+      },
+    },
+  },
+  tooltips: {
+    backgroundColor: "#f5f5f5",
+    titleFontColor: "#333",
+    bodyFontColor: "#666",
+    bodySpacing: 4,
+    xPadding: 12,
+    mode: "nearest",
+    intersect: 0,
+    position: "nearest"
+  },
+
+};
+
+const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', ''];
+// const bgcolor = 'linear-gradient(89.98deg, rgba(76, 223, 232, 0.05) 2.33%, rgba(121, 71, 247, 0.05) 99.97%);'
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'Mountly Balance',
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 40 })),
+      // borderColor: 'rgb(53, 162, 235)',
+      // backgroundColor: "#7947F7",
+      borderColor: "#7947F7",
+      fill: true,
+      borderWidth: 3,
+      pointRadius: 0,
+    },
+  ],
+};
+
+
 function RightPage(props) {
   return (
     <>
@@ -30,6 +129,10 @@ function RightPage(props) {
           </div>
         </div>
 
+      </div>
+
+      <div className='h-40'>
+        <Line options={options} data={data} />
       </div>
 
     </>
